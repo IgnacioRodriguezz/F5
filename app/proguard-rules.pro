@@ -1,0 +1,1 @@
+-keep class com.rodriguez.f5.data.remote.dto.** { *; }

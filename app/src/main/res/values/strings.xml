@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">F5</string>
+    <string name="tab_today">Hoy</string>
+    <string name="tab_competitions">Competiciones</string>
+    <string name="tab_favorites">Favoritos</string>
+    <string name="tab_search">Buscar</string>
+    <string name="retry">Reintentar</string>
+</resources>

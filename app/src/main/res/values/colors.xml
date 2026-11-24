@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#B6FF00</color>
+
+    <color name="brand_lime">#B6FF00</color>
+    <color name="brand_amber">#FFBE5D</color>
+    <color name="brand_coral">#FD5D5D</color>
+    <color name="brand_ink">#08080E</color>
+
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alternate">#EEEEEE</color>
+    <color name="text_primary">#08080E</color>
+    <color name="text_secondary">#525256</color>
+    <color name="text_tertiary">#77777A</color>
+    <color name="outline">#E1E1E1</color>
+    <color name="crest_plate">#FFFFFF</color>
+</resources>

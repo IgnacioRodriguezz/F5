@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/surface">
+
+    <View
+        android:id="@+id/liveBar"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_live_bar"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/statusDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/dot_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/statusLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/statusLabel"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:fontFamily="@font/sora_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statusDot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="67’" />
+
+    <ImageView
+        android:id="@+id/homeCrest"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_crest_plate"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toEndOf="@id/statusLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/awayCrest"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/awayCrest"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="7dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_crest_plate"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toEndOf="@id/statusLabel"
+        app:layout_constraintTop_toBottomOf="@id/homeCrest"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/homeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:fontFamily="@font/sora_medium"
+        app:layout_constraintStart_toEndOf="@id/homeCrest"
+        app:layout_constraintEnd_toStartOf="@id/homeScore"
+        app:layout_constraintTop_toTopOf="@id/homeCrest"
+        app:layout_constraintBottom_toBottomOf="@id/homeCrest"
+        tools:text="Boca Jrs." />
+
+    <TextView
+        android:id="@+id/awayName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:fontFamily="@font/sora_medium"
+        app:layout_constraintStart_toEndOf="@id/awayCrest"
+        app:layout_constraintEnd_toStartOf="@id/awayScore"
+        app:layout_constraintTop_toTopOf="@id/awayCrest"
+        app:layout_constraintBottom_toBottomOf="@id/awayCrest"
+        tools:text="Vélez" />
+
+    <TextView
+        android:id="@+id/homeScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:minWidth="20dp"
+        android:gravity="end"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:fontFamily="@font/barlow_condensed_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/homeCrest"
+        app:layout_constraintBottom_toBottomOf="@id/homeCrest"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/awayScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:minWidth="20dp"
+        android:gravity="end"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:fontFamily="@font/barlow_condensed_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/awayCrest"
+        app:layout_constraintBottom_toBottomOf="@id/awayCrest"
+        tools:text="0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
